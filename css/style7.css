@@ -1,0 +1,11 @@
+@font-face{
+    font-family: caveat;
+    src: url('../font/mod3_caveat.ttf') format('truetype');
+}
+@font-face{
+    font-family: chonburi;
+    src: url('../font/mod3_chonburi.ttf') format('truetype');
+}
+body{
+    font-family: chonburi;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="listApp">
+<head>
+    <title>Document</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>  
+    <script type="text/javascript" src="js3/script.js"></script>
+</head>
+<body ng-controller="listController">
+    <h1>list of item</h1>
+    <hr>
+    <ol>
+        <li ng-repeat="item in items">
+            {{item}}
+        </li>
+    </ol>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>add new item</legend>
+            <input type="text" ng-model="newItem" placeholder="item text">
+            <button ng-click="addItem()">&#43;</button>
+        </fieldset>
+    </form>
+</body>
+</html>
