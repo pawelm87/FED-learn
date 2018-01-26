@@ -10,3 +10,28 @@ body>p{
     font-weight: bold;
     text-align: center;
 }
+fieldset{
+    margin: 10px;
+    border-radius: 10px;
+}
+label{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+input{
+    float: right;
+    margin-right: 70px;
+    width: 150px;
+}
+input:invalid{
+    background-color: rgb(238, 115, 115);
+}
+input:valid{
+    background-color: rgb(118, 238, 118);
+}
+section>button{
+display: inline;
+margin-right: 20px;
+float: left;
+width:150px;
+}

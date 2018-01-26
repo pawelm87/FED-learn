@@ -15,6 +15,22 @@ class Contact {
     }
 }
 
+function empty(){
+    cm.empty();
+    cm.displayContactsAsATable("contacts");
+}
+
+function save(){
+    cm.save();
+}
+
+function load(){
+    cm.empty();
+    cm.load();
+    cm.displayContactsAsATable("contacts");
+}
+
+
 class ContactManager{
     constructor(){
         this.listOfContacts =[];
@@ -98,4 +114,21 @@ class ContactManager{
 
         container.appendChild(table);
     }
+}
+
+function formSubmitted(){
+    let name = document.querySelector("#name");
+    let email = document.querySelector("#email");
+
+    let newContact = new Contact(name.value, email.value);
+
+    cm.add(newContact);
+
+    name.value = "";
+    email.value = "";
+
+    cm.displayContactsAsATable("contacts");
+
+    return false;
+
 }
